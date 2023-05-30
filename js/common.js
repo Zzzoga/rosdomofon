@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay: false,
 		prevArrow: '.bsc__arrow.prev',
 		nextArrow: '.bsc__arrow.next',
-		fade: true
+		fade: true,
+		swipeToSlide: false
 	});
 
 
