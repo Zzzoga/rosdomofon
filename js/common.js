@@ -55,8 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		slidesToScroll: 1,
 		dots: true,
 		arrows: false,
-		autoplay: true,
+		autoplay: false,
   		autoplaySpeed: 3000,
+		fade: true
 	});
 
 	$('.bslider__items').slick({
@@ -138,16 +139,13 @@ document.querySelectorAll('.faq__header').forEach(faq => {
         if (faq.closest('.faq__item').querySelector('.faq__body').classList.contains('active__toggle')) {
             document.querySelectorAll('.faq__body').forEach(body => {
                 body.classList.remove('active__toggle')
-				body.closest('.faq__item').querySelector('.faq__header').style.background = 'url(../img/plus.svg) no-repeat 97% center'
             })
         } else {
             document.querySelectorAll('.faq__body').forEach(body => {
                 body.classList.remove('active__toggle')
-				body.closest('.faq__item').querySelector('.faq__header').style.background = 'url(../img/plus.svg) no-repeat 97% center'
             })
 
             faq.closest('.faq__item').querySelector('.faq__body').classList.add('active__toggle')
-			faq.closest('.faq__item').querySelector('.faq__header').style.background = 'url(../img/minus.svg) no-repeat 97% center'
         }
         
     })

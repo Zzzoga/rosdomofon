@@ -335,10 +335,33 @@ span.tsr__span {
     position: relative;
 }
 
-.ts__right__person {
-    position: relative;
-    right: -60px;
-    bottom: 50px;
+img.person {
+    position: absolute;
+    z-index: 1;
+}
+
+img.person.ts__1 {
+	top: 85px;
+	right: -207px;
+}
+
+img.person.ts__2 {
+	top: 55px;
+	right: -204px;
+}
+
+img.person.ts__3 {
+	top: 55px;
+	right: -250px;
+}
+
+img.person.ts__4 {
+	top: 84px;
+	right: -238px;
+}
+
+.slick-list {
+    overflow: visible;
 }
 
 .ts__right__phone {
