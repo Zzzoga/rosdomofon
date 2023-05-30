@@ -69,7 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		prevArrow: '.bsc__arrow.prev',
 		nextArrow: '.bsc__arrow.next',
 		fade: true,
-		swipeToSlide: false
+		swipeToSlide: false,
+		swipe: false
 	});
 
 
