@@ -1,0 +1,387 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px) {
+
+	.logo {
+		width: 162px;
+		background-size: 100%;
+	}
+	
+	.top__link {
+		font-weight: 500;
+		font-size: 15.9375px;
+		line-height: 22px;
+	}
+	
+	nav.top__nav {
+		max-width: 405px;
+	}
+	
+	header.header {
+		padding: 16px 80px;
+	}
+	
+	.small__download__btn.modal__btn {
+		font-weight: 500;
+		font-size: 12.3958px;
+		line-height: 17px;
+		padding: 10px 28px;
+	}
+	
+	.ts__right__phone {
+		max-width: 297px;
+	}
+	
+	.ts__right__phone img {
+		width: 100%;
+	}
+	
+	.ts__right__person {
+		max-width: 108px;
+		right: -50px;
+	}
+	
+	.ts__right__person img {
+		width: 100%;
+	}
+	
+	.ts__item__title {
+		font-weight: 700;
+		font-size: 39px;
+		line-height: 115.7%;
+	}
+	
+	.ts__item__text {
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 27px;
+		margin-top: 15px;
+	}
+	
+	.slick-dots {
+		margin: 46px 0 32px 0;
+	}
+	
+	span.tsr__span {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 120%;
+		margin-left: 10px;
+	}
+	
+	.tsr__item img {
+		max-height: 40px;
+		width: 100%;
+		max-width: 40px;
+	}
+	
+	.tsr__item:nth-child(2) {
+		margin: 0 18px;
+	}
+	
+	.ts__rating {
+		margin-bottom: 60px;
+		width: 100%;
+	}
+	
+	span.tsr__span {}
+	
+	.tsd__title {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 38px;
+	}
+	
+	.tsd__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.download__btn.modal__btn {
+		padding: 7px 30px 13px 30px;
+		width: 374px;
+		height: 80px;
+		overflow: hidden;
+	}
+	
+	.top__screen {}
+	
+	.benefits {
+		margin-top: 160px;
+	}
+	
+	.section__title {
+		font-weight: 500;
+		font-size: 39px;
+		line-height: 42px;
+	}
+	
+	.bsi__title {
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 31px;
+		margin-bottom: 22px;
+	}
+	
+	.bsi__text {
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 28px;
+	}
+	
+	.bsi__info {
+		max-width: 500px;
+	}
+	
+	.bsi__img {
+		max-width: 230px;
+	}
+	
+	.bsi__img img {
+		width: 100%;
+	}
+	
+	.benefits__sitem {
+		margin-bottom: 103px;
+	}
+	
+	.circle__white {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 29px;
+	}
+	
+	.bs__controls__circle {
+		max-width: 52px;
+		margin-bottom: 18px;
+	}
+	
+	.circle__border {
+		width: 52px;
+		height: 52px;
+	}
+	
+	.circle__white {
+		width: 50px;
+		height: 50px;
+	}
+	
+	.bsc__arrow.prev {
+		width: 35px;
+		height: 35px;
+		margin-right: 11.5px;
+	}
+	
+	.bsc__arrow.next {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 31px;
+	}
+	
+	.app {
+		padding-top: 135px;
+		background: url(../img/app__bg.png) no-repeat center -65px;
+	}
+	
+	.app__item {
+		width: 317px;
+		height: 332px;
+		font-weight: 600;
+		font-size: 23px;
+		line-height: 125%;
+		padding-top: 26px;
+		background-size: 190px;
+	}
+	
+	.app__item.step__1 {
+		background-size: 190px;
+	}
+	
+	.app__item.step__2 {
+		background-size: 190px;
+	}
+	
+	.app__item.step__3 {
+		background-size: 190px;
+	}
+	
+	.rating {
+		margin-top: 140px;
+	}
+	
+	.rating__text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 25px;
+	}
+	
+	.rating .section__title {
+		margin-bottom: 34px;
+	}
+	
+	.rating__items {
+		margin: 29px 0;
+	}
+	
+	.more {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.faq {
+		margin-top: 126px;
+	}
+	
+	.faq__header {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		padding: 24px 0;
+		background-size: 20px !important;
+	}
+	
+	.faq__header {}
+	
+	.faq .more {
+		margin-top: 48px;
+	}
+	
+	footer.footer {
+		margin-top: 65px;
+	}
+	
+	.footer__logo {
+		width: 150px;
+		background-size: 100%;
+	}
+	
+	.footer__link {
+		font-weight: 400;
+		font-size: 14.1667px;
+		line-height: 22px;
+	}
+	
+	.footer__nav li {
+		margin-right: 44px;
+	}
+	
+	.apple {
+		max-width: 103px;
+		width: 100%;
+		display: block;
+		margin-left: 7px;
+	}
+	
+	.apple img {
+		width: 100%;
+	}
+	
+	.markets {
+		display: flex;
+	}
+	
+	.footer__top {
+		padding-bottom: 86px;
+	}
+	
+	.copyrights {
+		font-weight: 400;
+		font-size: 12.3958px;
+		line-height: 19px;
+		margin-right: 85px;
+	}
+	
+	.politics {
+		font-weight: 400;
+		font-size: 12.3958px;
+		line-height: 19px;
+	}
+	
+	.vk {
+		font-weight: 400;
+		font-size: 12.3958px;
+		line-height: 19px;
+		background-size: 26px;
+		padding: 5px 0 5px 40px;
+	}
+	
+	.sk {
+		width: 122px;
+		background-size: 100%;
+		margin-left: 80px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

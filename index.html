@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+	
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<div class="qr__modal">
+		<div class="qr__overlay"></div>
+		<div class="qr__wrapper">
+			<div class="qr__close"></div>
+			<div class="qr__code">
+				<img src="img/qr.svg" alt="">
+			</div>
+			<div class="qr__info">
+				<div class="qr__title">Отсканируйте QR-код камерой вашего смартфона и перейдите к загрузке мобильного приложения РосДомофон</div>
+				<div class="qr__bottom">
+					<div class="qr__text">Сервис доступен на платформах</div>
+					<div class="qr__markets">
+						<a href="/"><img src="img/modal__app__1.svg" alt=""></a>
+						<a href="/"><img src="img/modal__app__2.svg" alt=""></a>
+						<a href="/"><img src="img/modal__app__3.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header__wrapper">
+			<a href="/" class="logo"></a>
+			<nav class="top__nav">
+				<ul class="top__ul">
+					<li class="top__li"><a href="/" class="top__link">Для жителей</a></li>
+					<li class="top__li"><a href="/" class="top__link">Для бизнеса</a></li>
+					<li class="top__li"><a href="/" class="top__link">О компании</a></li>
+				</ul>
+			</nav>
+			<a href="/" class="small__download__btn modal__btn">Скачать приложение</a>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="top__screen">
+			<div class="ts__wrapper">
+				<div class="ts__left">
+					<div class="ts__slider">
+						<div class="ts__items">
+							<div class="ts__item">
+								<h3 class="ts__item__title">Открывайте дверь гостям с вашего смартфона</h3>
+								<div class="ts__item__text">в подъезд или калитку во двор</div>
+							</div>
+							<div class="ts__item">
+								<h3 class="ts__item__title">Контролируйте двор и подъезд</h3>
+								<div class="ts__item__text">с видеонаблюдением в мобильном приложении</div>
+							</div>
+							<div class="ts__item">
+								<h3 class="ts__item__title">Всегда будьте в курсе, кто приходил</h3>
+								<div class="ts__item__text">к вашим детям и пожилым родственникам</div>
+							</div>
+							<div class="ts__item">
+								<h3 class="ts__item__title">Обсуждайте с соседями важные вопросы</h3>
+								<div class="ts__item__text">в чате приложения РосДомофон</div>
+							</div>
+						</div>
+					</div>
+					<div class="ts__rating">
+						<div class="tsr__item">
+							<img src="img/ts__win.svg" alt="">
+							<span class="tsr__span">4.5 оценка<br> приложения</span>
+						</div>
+						<div class="tsr__item">
+							<img src="img/ts__million.svg" alt="">
+							<span class="tsr__span">квартир <br>охвачено</span>
+						</div>
+						<div class="tsr__item">
+							<img src="img/ts__rus.svg" alt="">
+							<span class="tsr__span">доступно <br>по всей России</span>
+						</div>
+					</div>
+					<a href="/" class="download__btn modal__btn">
+						<span class="tsd__title">Скачать приложение</span>
+						<span class="tsd__text">и подключить вашу квартиру</span>
+					</a>
+				</div>
+				<div class="ts__right">
+					<div class="ts__right__phone">
+						<img src="img/ts__phone.png" alt="">
+					</div>
+					<div class="ts__right__person">
+						<img src="img/ts__person.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefits">
+			<div class="benefits__wrapper">
+				<h2 class="section__title">Что еще умеет РосДомофон?</h2>
+				<div class="benefits__static">
+					<div class="benefits__sitem">
+						<div class="bsi__info">
+							<div class="bsi__title">Ключи от подъезда и шлагбаума всегда с собой</div>
+							<div class="bsi__text">Ключи от входных дверей, калиток и шлагбаумов не потеряются и не сломаются, ведь они теперь в Вашем смартфоне.</div>
+						</div>
+						<div class="bsi__img">
+							<img src="img/benefits__1.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="benefits__sitem">
+						<div class="bsi__info">
+							<div class="bsi__title">Видеовызов с домофона приходит на смартфон</div>
+							<div class="bsi__text">Для гостей Вы всегда дома, потому что вызовы с домофона приходят прямо на Ваш смартфон.</div>
+						</div>
+						<div class="bsi__img">
+							<img src="img/benefits__2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="benefits__slider">
+					<div class="benefits__slider__wrapper">
+						<div class="bslider__items">
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Одноразовый онлайн ключ</div>
+									<div class="bsi__text">Если ждёте нескольких посетителей или устали бегать к домофону, просто выдайте гостям одноразовый ключ. Он действителен в течении дня.</div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/benefits__3.jpg" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">История вызовов с домофона</div>
+									<div class="bsi__text">Не переживайте за маленьких детей и маломобильных родственников, которым тяжело подойти к домофонной трубке. Вы всегда будете знать, кто к ним приходил.</div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/benefits__4.jpg" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Видеонаблюдение во дворе и подъезде</div>
+									<div class="bsi__text">В случае происшествия или порчи имущества, Вы всегда можете обратиться к архиву видеозаписей и узнать детали. </div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/benefits__5.jpg" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Чат с вашей УК</div>
+									<div class="bsi__text">Общайтесь с управляющей компанией, оставляйте заявки на ремонт, и получайте уведомления о важных событиях дома в приложении РосДомофон. </div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/benefits__6.jpg" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Общедомовой чат жильцов</div>
+									<div class="bsi__text">Общайтесь с соседями и обсуждайте важные бытовые вопросы в общедомовом чате, внутри приложения.</div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/benefits__7.jpg" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Управление шлагбаумом и домофоном через Алису и Сири</div>
+									<div class="bsi__text">Открывайте подъездную дверь, шлагбаум и калитку во двор голосом, просто сказав: «Сири, открой поезд главный вход» или «Алиса, открой шлагбаум на парковку»</div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/benefits__8.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="bslider__controls">
+							<div class="bs__controls__circle">
+								<div class="circle__border"></div>
+								<div class="circle__white">3/8</div>
+							</div>
+							<div class="bs__controls__arrows">
+								<div class="bsc__arrow prev"></div>
+								<div class="bsc__arrow next">
+									<span class="span__more">Еще умеет</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="app">
+			<div class="app__wrapper">
+				<h2 class="section__title">Что еще умеет РосДомофон?</h2>
+				<div class="app__items">
+					<div class="app__item step__1">
+						Скачайте<br>
+						приложение
+					</div>
+					<div class="app__item step__2">
+						Укажите адрес <br>подключения
+					</div>
+					<div class="app__item step__3">
+						Ожидайте <br>подключения
+					</div>
+				</div>
+				<a href="/" class="download__btn modal__btn">
+					<span class="tsd__title">Скачать приложение</span>
+					<span class="tsd__text">и подключить вашу квартиру</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="rating">
+			<div class="rating__wrapper">
+				<h2 class="section__title">Вот что говорят о нас пользователи</h2>
+				<div class="rating__text">Мобильное приложение РосДомофон охватывает более 1 млн квартир. Прочитайте, что пишут пользователи о мобильном приложении и комплексе умных сервисов РосДомофон.</div>
+				<div class="rating__items">
+					<img src="img/rating__1.svg" alt="">
+					<img src="img/rating__2.svg" alt="">
+					<img src="img/rating__3.svg" alt="">
+				</div>
+				<div class="rating__text">Читайте больше реальных отзывов в разделе «Рейтинги и отзывы» в магазинах приложений App Store, Google Play, Huawei Gallery</div>
+				<a href="/" class="more">Больше отзывов здесь</a>
+			</div>
+		</section>
+
+		<section class="faq">
+			<div class="faq__wrapper">
+				<h2 class="section__title">Если остались вопросы</h2>
+				<div class="faq__list">
+					<div class="faq__item">
+						<div class="faq__header">Я оставил(а) заявку, а меня не подключают. Что делать?</div>
+						<div class="faq__body">Ответ</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">Могут ли все члены семьи пользоваться умным домофоном?</div>
+						<div class="faq__body">Ответ</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">У меня уже есть трубка от домофона. Как подключить ваш сервис?</div>
+						<div class="faq__body">Ответ</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">Можно ли пользоваться сервисом без наличия трубки домофона?</div>
+						<div class="faq__body">Ответ</div>
+					</div>
+				</div>
+				<a href="/" class="more">Показать больше ответов</a>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__top">
+				<a href="/" class="footer__logo"></a>
+				<nav class="footer__nav">
+					<ul>
+						<li><a href="/" class="footer__link">О нас</a></li>
+						<li><a href="/" class="footer__link">Оставить отзыв</a></li>
+						<li><a href="/" class="footer__link">Стать партнером</a></li>
+					</ul>
+				</nav>
+				<div class="markets">
+					<a href="/" class="apple"><img src="img/apple.svg" alt=""></a>
+					<a href="/" class="apple"><img src="img/android.svg" alt=""></a>
+					<a href="/" class="apple"><img src="img/huawei.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="ft__left">
+					<div class="copyrights">© РосДомофон, 2023</div>
+					<a href="/" class="politics">Политика конфиденциальности</a>
+				</div>
+				<div class="ft__right">
+					<a href="/" class="vk">Мы Вконтакте</a>
+					<a href="/" class="sk"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+		SmoothScroll({
+			animationTime    : 1000,
+			stepSize         : 50,
+	
+			
+			accelerationDelta : 30,  
+			accelerationMax   : 2,   
+	
+	
+			keyboardSupport   : true,  
+			arrowScroll       : 50,
+	
+	
+			pulseAlgorithm   : true,
+			pulseScale       : 4,
+			pulseNormalize   : 1,
+	
+			touchpadSupport   : true,
+		})
+	</script>	
+	
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
