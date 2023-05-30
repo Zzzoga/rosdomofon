@@ -36,7 +36,7 @@ html.js .loader {
 	z-index: 9999;
 }
 html.js .loader_inner {
-	background-image: url("../img/preloader.gif");
+	background-image: url("../img/circle.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
