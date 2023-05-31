@@ -178,5 +178,61 @@ document.querySelector('.qr__overlay').addEventListener('click', () => {
 	}, 500)
 })
 
+document.querySelectorAll('.top__link').forEach(link => {
+    link.addEventListener('click', (btn)=> {
+        btn.preventDefault()
+        if (btn.target.textContent.trim() === 'Для бизнеса') {
+            if (link.classList.contains('active')) {
+                link.classList.remove('active')
+                    document.querySelector('.submenu').style.opacity = '0'
+                    document.querySelector('.full__overlay').style.opacity = '0'
+                setTimeout( ()=> {
+                    document.querySelector('.submenu').style.display = 'none'
+                    document.querySelector('.full__overlay').style.display = 'none'
+                }, 500)
+            } else {
+                link.classList.add('active')
+                document.querySelector('.submenu').style.display = 'flex'
+                document.querySelector('.full__overlay').style.display = 'flex'
+                setTimeout( ()=> {
+                    document.querySelector('.submenu').style.opacity = '1'
+                    document.querySelector('.full__overlay').style.opacity = '.1'
+                }, 100)
+            }     
+        }
+    })
+})
+
+document.querySelector('.full__overlay').addEventListener('click', (btn)=> {
+    document.querySelectorAll('.top__link').forEach(link => {
+        if (link.classList.contains('active')) {
+                link.classList.remove('active')
+                    document.querySelector('.submenu').style.opacity = '0'
+                    document.querySelector('.full__overlay').style.opacity = '0'
+                setTimeout( ()=> {
+                    document.querySelector('.submenu').style.display = 'none'
+                    document.querySelector('.full__overlay').style.display = 'none'
+                }, 500)
+        }
+    })
+})
+
+document.querySelector('.footer__link.sub__main').addEventListener('click', (e) => {
+    e.preventDefault()
+    if (e.target.classList.contains('active')) {
+        e.target.classList.remove('active')
+        document.querySelector('.footer__submenu').style.opacity = '0'
+        setTimeout(()=> {
+            document.querySelector('.footer__submenu').style.display = 'none'
+        }, 500)
+    } else {
+        e.target.classList.add('active')
+        document.querySelector('.footer__submenu').style.display = 'flex'
+        setTimeout(()=> {
+            document.querySelector('.footer__submenu').style.opacity = '1'
+        }, 100)
+    }
+})
+
 	  
 })

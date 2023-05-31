@@ -43,6 +43,8 @@
 		<div class="loader_inner"></div>
 	</div>
 
+	<div class="full__overlay"></div>
+
 	<div class="qr__modal">
 		<div class="qr__overlay"></div>
 		<div class="qr__wrapper">
@@ -70,7 +72,16 @@
 			<nav class="top__nav">
 				<ul class="top__ul">
 					<li class="top__li"><a href="/" class="top__link">Для жителей</a></li>
-					<li class="top__li"><a href="/" class="top__link">Для бизнеса</a></li>
+					<li class="top__li">
+						<a href="/" class="top__link">Для бизнеса  <div class="nav__arrow"></div></a>
+						<div class="submenu">
+							<ul class="sub__menu">
+								<li><a href="/" class="sub__link">Домофонным компаниям</a></li>
+								<li><a href="/" class="sub__link">Телекоммуникационным компаниям</a></li>
+								<li><a href="/" class="sub__link">Управляющим компаниям</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class="top__li"><a href="/" class="top__link">О компании</a></li>
 				</ul>
 			</nav>
@@ -316,7 +327,16 @@
 					<ul>
 						<li><a href="/" class="footer__link">О нас</a></li>
 						<li><a href="/" class="footer__link">Оставить отзыв</a></li>
-						<li><a href="/" class="footer__link">Стать партнером</a></li>
+						<li>
+							<a href="/" class="footer__link sub__main">Стать партнером</a>
+							<div class="footer__submenu">
+								<ul>
+									<li><a href="/" class="f__sublink">Домофонным компаниям</a></li>
+									<li><a href="/" class="f__sublink">Телекоммуникационным компаниям</a></li>
+									<li><a href="/" class="f__sublink">Управляющим компаниям</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</nav>
 				<div class="markets">
@@ -351,7 +371,7 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script>
+	<!-- <script>
 		SmoothScroll({
 			animationTime    : 1000,
 			stepSize         : 50,
@@ -371,7 +391,7 @@
 	
 			touchpadSupport   : true,
 		})
-	</script>	
+	</script>	 -->
 	
 	<script src="js/common.js"></script>
 	
