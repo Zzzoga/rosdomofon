@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		slidesToScroll: 1,
 		dots: true,
 		arrows: false,
-		autoplay: false,
+		autoplay: true,
   		autoplaySpeed: 3000,
 		fade: true
 	});
