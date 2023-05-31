@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		slidesToScroll: 1,
 		dots: true,
 		arrows: true,
-		autoplay: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		prevArrow: '.bsc__arrow.prev',
 		nextArrow: '.bsc__arrow.next',
 		fade: true,
@@ -74,6 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		swipe: false
 	});
 
+let i = 1
+document.querySelectorAll('.benefits .slick-dots li').forEach(li => {
+    li.classList.add(`li_${i++}`)
+})
 
 const nextArrow = document.querySelector('.bsc__arrow.next')
 const prevArrow = document.querySelector('.bsc__arrow.prev')
@@ -127,6 +132,57 @@ function changeCircleProgressSlider(btn) {
 		})
 	})
 }
+
+(function(){
+    var originalAddClassMethod = jQuery.fn.addClass;
+    $.fn.addClass = function(){
+        var result = originalAddClassMethod.apply(this, arguments);
+        $(this).trigger('cssClassChanged');
+        return result;
+    }
+})();
+
+$(function(){
+    $(".li_1").bind('cssClassChanged', function(){ 
+        document.querySelector('.circle__border').style.backgroundImage = 'linear-gradient(225deg, transparent 50%, #F1F1F1 50%), linear-gradient(90deg, #F1F1F1 50%, transparent 50%)'
+		document.querySelector('.circle__white').innerHTML = '3/8'
+    });
+});
+
+$(function(){
+    $(".li_2").bind('cssClassChanged', function(){ 
+        document.querySelector('.circle__border').style.backgroundImage = 'linear-gradient(270deg, transparent 50%, #F1F1F1 50%), linear-gradient(90deg, #F1F1F1 50%, transparent 50%)'
+		document.querySelector('.circle__white').innerHTML = '4/8'
+    });
+});
+
+$(function(){
+    $(".li_3").bind('cssClassChanged', function(){ 
+        document.querySelector('.circle__border').style.backgroundImage = 'linear-gradient(135deg, transparent 50%, #0DA7E2 50%), linear-gradient(90deg, #F1F1F1 50%, transparent 50%)'
+		document.querySelector('.circle__white').innerHTML = '5/8'
+    });
+});
+
+$(function(){
+    $(".li_4").bind('cssClassChanged', function(){ 
+        document.querySelector('.circle__border').style.backgroundImage = 'linear-gradient(180deg, transparent 50%, #0DA7E2 50%), linear-gradient(90deg, #F1F1F1 50%, transparent 50%)'
+		document.querySelector('.circle__white').innerHTML = '6/8'
+    });
+});
+
+$(function(){
+    $(".li_5").bind('cssClassChanged', function(){ 
+        document.querySelector('.circle__border').style.backgroundImage = 'linear-gradient(225deg, transparent 50%, #0DA7E2 50%), linear-gradient(90deg, #F1F1F1 50%, transparent 50%)'
+		document.querySelector('.circle__white').innerHTML = '7/8'
+    });
+});
+
+$(function(){
+    $(".li_6").bind('cssClassChanged', function(){ 
+        document.querySelector('.circle__border').style.backgroundImage = 'linear-gradient(270deg, transparent 50%, #0DA7E2 50%), linear-gradient(90deg, #F1F1F1 50%, transparent 50%)'
+		document.querySelector('.circle__white').innerHTML = '8/8'
+    });
+});
 
 changeCircleProgressSlider(nextArrow)
 changeCircleProgressSlider(prevArrow)
