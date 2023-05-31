@@ -139,13 +139,16 @@ document.querySelectorAll('.faq__header').forEach(faq => {
         if (faq.closest('.faq__item').querySelector('.faq__body').classList.contains('active__toggle')) {
             document.querySelectorAll('.faq__body').forEach(body => {
                 body.classList.remove('active__toggle')
+				body.closest('.faq__item').querySelector('.plus__faq').style.transform = 'rotate(0)'
             })
         } else {
             document.querySelectorAll('.faq__body').forEach(body => {
                 body.classList.remove('active__toggle')
+				body.closest('.faq__item').querySelector('.plus__faq').style.transform = 'rotate(0)'
             })
 
             faq.closest('.faq__item').querySelector('.faq__body').classList.add('active__toggle')
+			faq.closest('.faq__item').querySelector('.plus__faq').style.transform = 'rotate(45deg)'
         }
         
     })

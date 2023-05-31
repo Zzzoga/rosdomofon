@@ -164,6 +164,7 @@ nav.top__nav {
 .small__download__btn:focus,
 .small__download__btn:active {
 	color: #fff;
+	box-shadow: 1px 1px 10px #0000004d;
 }
 
 .small__download__btn::after,
@@ -200,7 +201,7 @@ nav.top__nav {
 .top__screen {
     display: flex;
     justify-content: center;
-    padding: 106px 0;
+    padding: 194px 0 116px 0;
     width: 100%;
     background: url(../img/ts__bg.png) no-repeat center bottom;
 }
@@ -217,7 +218,7 @@ nav.top__nav {
 .ts__left {
     display: flex;
     flex-direction: column;
-    max-width: 640px;
+    max-width: 100%;
 }
 
 .ts__item__title {
@@ -228,6 +229,7 @@ nav.top__nav {
 /* Color/Black */
     color: #000000;
     margin: 0;
+    max-width: 640px;
 }
 
 .ts__item__text {
@@ -236,6 +238,7 @@ nav.top__nav {
     line-height: 30px;
     color: #000000;
     margin: 17px 0 0 0;
+    max-width: 640px;
 }
 
 span.tsr__span {
@@ -308,6 +311,10 @@ span.tsr__span {
 	opacity: 0;
 }
 
+.download__btn:hover {
+	box-shadow: 1px 1px 10px #0000004d;
+}
+
 .download__btn span {
 	transition: all .5s ease;
 }
@@ -341,23 +348,23 @@ img.person {
 }
 
 img.person.ts__1 {
-	top: 85px;
-	right: -207px;
+	top: -60px;
+	right: 0;
 }
 
 img.person.ts__2 {
-	top: 55px;
-	right: -204px;
+	top: -60px;
+	right: 0;
 }
 
 img.person.ts__3 {
-	top: 55px;
-	right: -250px;
+	top: -60px;
+	right: 0;
 }
 
 img.person.ts__4 {
-	top: 84px;
-	right: -238px;
+	top: -60px;
+	right: 0;
 }
 
 .slick-list {
@@ -499,6 +506,7 @@ img.person.ts__4 {
 	color: #fff;
 	background: url(../img/bs__left__light.svg) no-repeat center;
 	background-color: #0DA7E2;
+	box-shadow: 1px 1px 10px #0000004d;
 }
 
 .bsc__arrow.next {
@@ -518,6 +526,7 @@ img.person.ts__4 {
 	color: #fff;
 	background: url(../img/bs__right__light.svg) no-repeat 90% center;
 	background-color: #0DA7E2;
+	box-shadow: 1px 1px 10px #0000004d;
 }
 
 .bsc__arrow.next img.arrow {
@@ -724,9 +733,14 @@ img.person.ts__4 {
     align-items: center;
     color: #000000;
     padding: 28px 0;
-    background: url(../img/plus.svg) no-repeat 97% center;
+    background: none;
     border-top: 1px solid #eee;
     width: 100%;
+    transition: all .5s ease;
+    justify-content: space-between;
+}
+
+.plus__faq {
 	transition: all .5s ease;
 }
 
