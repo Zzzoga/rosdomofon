@@ -344,6 +344,459 @@
 		margin-left: 80px;
 	}
 
+	.submenu {
+		top: 71px;
+	}
+	
+	a.sub__link {
+		font-size: 15.9375px;
+		line-height: 19px;
+	}
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+	.logo {
+		width: 139px;
+		background-size: 100%;
+	}
+	
+	.top__link {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+	}
+	
+	nav.top__nav {
+		max-width: 348px;
+	}
+	
+	header.header {
+		padding: 13px 88px;
+	}
+	
+	.small__download__btn.modal__btn {
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 15px;
+		padding: 9px 24px;
+		background: linear-gradient(85.88deg, #39ABFE 13.42%, #7B33F5 86.99%);
+		box-shadow: 0px 0px 7.6071px rgba(0, 0, 0, 0.1);
+		border-radius: 22.8213px;
+	}
+
+	.ts__wrapper {
+	    max-width: 848px;
+	}
+	
+	.ts__right__phone {
+		max-width: 297px;
+	}
+	
+	.ts__right__phone img {
+		width: 100%;
+	}
+	
+	.ts__right__person {
+		max-width: 108px;
+		right: -50px;
+	}
+
+	img.person.ts__1 {
+		max-width: 300px;
+		top: -65px;
+		right: 0;
+	}
+	
+	img.person.ts__2 {
+		max-width: 385px;
+		top: -65px;
+		right: 0;
+	}
+	
+	img.person.ts__3 {
+		max-width: 370px;
+		top: -65px;
+		right: 0;
+	}
+	
+	img.person.ts__4 {
+		max-width: 370px;
+		top: -65px;
+		right: 0;
+	}
+	
+	.ts__right__person img {
+		width: 100%;
+	}
+	
+	.ts__item__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 115.7%;
+		max-width: 480px;
+	}
+	
+	.ts__item__text {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 22px;
+		margin-top: 12px;
+		max-width: 480px;
+	}
+	
+	.slick-dots {
+		margin: 40px 0 27px 0;
+	}
+	
+	span.tsr__span {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 120%;
+		margin-left: 8px;
+		display: block;
+		width: 100%;
+	}
+	
+	.tsr__item img {
+		max-height: 32px;
+		width: 100%;
+		max-width: 32px;
+	}
+	
+	.tsr__item:nth-child(2) {
+		margin: 0 39px;
+	}
+	
+	.ts__rating {
+		margin-bottom: 52px;
+		width: 100%;
+		/* max-width: 100%; */
+	}
+	
+	span.tsr__span {}
+	
+	.tsd__title {
+		font-weight: 700;
+		font-size: 23px;
+		line-height: 31px;
+	}
+	
+	.tsd__text {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 22px;
+	}
+	
+	.download__btn.modal__btn {
+		padding: 5.5px 0 0 0;
+		width: 313px;
+		height: 67px;
+		overflow: hidden;
+		background: linear-gradient(225deg, #FF8B4A 0%, #DD0050 100%);
+		box-shadow: 0px 2.97359px 23.7887px rgba(0, 0, 0, 0.25);
+		border-radius: 23.7887px;
+	}
+	
+	.top__screen {}
+	
+	.benefits {
+		margin-top: 112px;
+	}
+	
+	.section__title {
+		font-weight: 500;
+		font-size: 33px;
+		line-height: 100%;
+	}
+	
+	.bsi__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+	
+	.bsi__text {
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 23px;
+	}
+	
+	.bsi__info {
+		max-width: 415px;
+	}
+	
+	.bsi__img {
+		max-width: 193px;
+	}
+	
+	.bsi__img img {
+		width: 100%;
+	}
+	
+	.benefits__sitem {
+		margin-bottom: 87px;
+	}
+	
+	.circle__white {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+	}
+	
+	.bs__controls__circle {
+		max-width: 45px;
+		margin-bottom: 15px;
+	}
+	
+	.circle__border {
+		width: 44px;
+		height: 44px;
+		/* margin: 0; */
+		/* padding: 0; */
+	}
+	
+	.circle__white {
+		width: 42px;
+		height: 42px;
+		/* margin: 0; */
+		/* margin: 0 6px 0 0px; */
+	}
+	
+	.bsc__arrow.prev {
+		width: 30px;
+		height: 30px;
+		margin-right: 9.5px;
+		background-size: 16px;
+	}
+	
+	.bsc__arrow.next {
+		background-size: 16px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 26px;
+		padding: 0 30px 0 11px;
+	}
+	
+	.app {
+		padding-top: 135px;
+		background: url(../img/app__bg.png) no-repeat center 168px;
+		background-size: 100%;
+	}
+	
+	.app__item {
+		width: 266px;
+		height: 278px;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 125%;
+		padding-top: 24px;
+		background-size: 190px;
+	}
+	
+	.app__item.step__1 {
+		background-size: 172px;
+	}
+	
+	.app__item.step__2 {
+		background-size: 172px;
+	}
+	
+	.app__item.step__3 {
+		background-size: 172px;
+	}
+	
+	.rating {
+		margin-top: 140px;
+	}
+	
+	.rating__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		max-width: 506px;
+	}
+	
+	.rating .section__title {
+		margin-bottom: 37px;
+	}
+	
+	.rating__items {
+		margin: 32px 0;
+	}
+	
+	.more {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 21px;
+	}
+	
+	.faq {
+		margin-top: 117px;
+	}
+	
+	.faq__header {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 20px;
+		padding: 20px 0;
+		background-size: 20px !important;
+	}
+	
+	.faq__header {}
+	
+	.faq .more {
+		margin-top: 36px;
+	}
+	
+	footer.footer {
+		margin-top: 64px;
+	}
+	
+	.footer__logo {
+		width: 127px;
+		background-size: 100%;
+	}
+	
+	.footer__link {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 19px;
+	}
+	
+	.footer__nav li {
+		margin-right: 37px;
+	}
+	
+	.apple {
+		max-width: 86px;
+		width: 100%;
+		display: block;
+		margin-left: 6px;
+	}
+	
+	.apple img {
+		width: 100%;
+	}
+	
+	.markets {
+		display: flex;
+	}
+	
+	.footer__top {
+		padding-bottom: 86px;
+	}
+	
+	.copyrights {
+		font-weight: 400;
+		font-size: 10.4px;
+		line-height: 16px;
+		margin-right: 85px;
+	}
+	
+	.politics {
+		font-weight: 400;
+		font-size: 10.4px;
+		line-height: 16px;
+	}
+	
+	.vk {
+		font-weight: 400;
+		font-size: 10.4px;
+		line-height: 16px;
+		background-size: 22px;
+		padding: 5px 0 5px 44px;
+	}
+	
+	.sk {
+		width: 103px;
+		background-size: 100%;
+		margin-left: 67px;
+	}
+
+	.header__wrapper {
+	    max-width: 848px;
+	}
+	
+	.slick-dots li button {
+	    width: 8.5px;
+	    height: 8.5px;
+	}
+	
+	.benefits__wrapper {
+	    max-width: 848px;
+	}
+	
+	.rating__items img {
+	    max-width: 267px;
+	}
+	
+	.rating__items img:nth-child(2) {
+	    margin: 0 23px;
+	}
+	
+	.faq__wrapper {
+	    max-width: 848px;
+	}
+	
+	.plus__faq {
+	    max-width: 16px;
+	}
+	
+	.faq__body {}
+	
+	.faq__body {
+	    font-size: 14px;
+	    line-height: 1.2;
+	}
+	
+	.footer__wrapper {
+	    max-width: 848px;
+	}
+	
+	a.f__sublink {
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+
+	a.sub__link {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	
+	.submenu {
+		padding: 24px 20px 16px 20px;
+		top: 65px;
+	}
+
+	.qr__title {
+		font-size: 22px;
+	}
+	
+	.qr__markets a {
+		max-width: 110px;
+	}
+	
+	.qr__markets a img {
+		width: 100%;
+	}
+	
+	.qr__code {
+		max-width: 240px;
+	}
+	
+	.qr__code img {
+		width: 100%;
+	}
+	
+	.qr__close {
+		height: 19px;
+		width: 19px;
+		background-size: 100%;
+	}
+
 }
 
 /* Medium Devices, Desktops */
