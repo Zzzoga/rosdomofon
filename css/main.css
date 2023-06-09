@@ -14,6 +14,9 @@
 	color: #666;
 	opacity: 1;
 }
+* {
+    box-sizing: border-box;
+}
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -22,6 +25,10 @@ body textarea:focus:required:invalid {
 body input:required:valid,
 body textarea:required:valid {
 	
+}
+
+html {
+    overflow-x: hidden;
 }
 
 html.js .loader {
@@ -89,7 +96,7 @@ a:active {
 /* Main styles */
 
 header.header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
