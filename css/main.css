@@ -696,6 +696,10 @@ img.person.ts__4 {
     max-width: 680px;
 }
 
+.rating__items__wrapper {
+    display: flex;
+}
+
 .rating__items {
     margin: 32px 0;
 }
