@@ -89,7 +89,7 @@ a:active {
 /* Main styles */
 
 header.header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -98,6 +98,11 @@ header.header {
     padding: 18px 120px;
     z-index: 99;
     background: #fff;
+    transition: all .5s linear;
+}
+
+.header_hidden {
+    transform: translateY(-100%);
 }
 
 .header__wrapper {

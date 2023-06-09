@@ -49,6 +49,41 @@ $(window).load(function() {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+	const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
+		const header = $('.header') // находим header и записываем в константу
+		let prevScroll = $(window).scrollTop() // узнаем на сколько была прокручена страница ранее
+		let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
+	
+		$(window).scroll(() => { // при прокрутке страницы
+		  currentScroll = $(window).scrollTop() // узнаем на сколько прокрутили страницу
+		  const headerHidden = () => header.hasClass('header_hidden') // узнаем скрыт header или нет
+		  if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
+			header.addClass('header_hidden') // то скрываем header
+		  }
+		  if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
+			header.removeClass('header_hidden') // то отображаем header
+		  }
+		  prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
+		})
+	  }
+	  
+	onScrollHeader() // вызываем основную функцию onScrollHeader
+
+	const mobileNav = document.querySelector('.mobile__nav')
+	const burger = document.querySelector('.burger__control')
+	burger.addEventListener('click', (e)=> {
+		e.preventDefault()
+		if (e.target.closest('.burger__control').classList.contains('active')) {
+			e.target.closest('.burger__control').classList.remove('active')
+			mobileNav.style.transform = 'translateX(-100%)'
+			document.querySelector('body').style.overflow = 'auto'
+		} else {
+			e.target.closest('.burger__control').classList.add('active')
+			mobileNav.style.transform = 'translateX(0%)'
+			document.querySelector('body').style.overflow = 'hidden'
+		}
+	})
+
 	$('.ts__items').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -56,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		dots: true,
 		arrows: false,
 		autoplay: true,
-  		autoplaySpeed: 3000,
+  		autoplaySpeed: 10000,
 		fade: true
 	});
 
@@ -67,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		dots: true,
 		arrows: true,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 15000,
 		prevArrow: '.bsc__arrow.prev',
 		nextArrow: '.bsc__arrow.next',
 		fade: true,
