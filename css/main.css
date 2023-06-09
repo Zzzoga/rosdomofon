@@ -1138,3 +1138,7 @@ a.sub__link:hover {
 	transition: all .5s ease;
 	z-index: 9;
 }
+
+.mobile__nav {
+    display: none;
+}
