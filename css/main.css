@@ -1003,7 +1003,7 @@ a.f__sublink:hover {
 }
 
 .copyrights {
-    margin-right: 69px;
+    margin-right: 84px;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -1021,6 +1021,18 @@ a.f__sublink:hover {
     text-decoration: none;
     margin-bottom: 23px;
     width: 100%;
+}
+
+a.politics {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+/* or 157% */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #FFFFFF;
 }
 
 a.politics__link {
