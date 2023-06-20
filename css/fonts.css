@@ -1,9 +1,43 @@
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
-			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-family: "Golos";
+	src: url("../fonts/golos-text_regular.ttf");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Golos";
+	src: url("../fonts/golos-text_medium.ttf");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Golos";
+	src: url("../fonts/golos-text_demibold.ttf");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Golos";
+	src: url("../fonts/golos-text_bold.ttf");
+	font-style: normal;
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: "Golos";
+	src: url("../fonts/golos-text_black.ttf");
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "Golos VF";
+	src: url("../fonts/golos-text_vf.ttf");
 	font-style: normal;
 	font-weight: normal;
 }
+
+

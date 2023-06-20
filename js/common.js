@@ -84,6 +84,55 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
+	if (document.documentElement.clientWidth <= 992) {
+		if (/Android|webOS|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+			
+		} else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+		} else {
+
+		}
+	}
+
+	function showHideModal(btn, close, overlay, modal) {
+		btn.forEach(el=> {
+			el.addEventListener('click', (e)=> {
+				e.preventDefault()
+				modal.style.display = 'flex'
+				setTimeout(()=> {
+					modal.style.opacity = '1'
+				}, 500)
+			})
+		})
+	
+		close.addEventListener('click', (e)=> {
+			e.preventDefault()
+			modal.style.opacity = '0'
+			setTimeout(()=> {
+				modal.style.display = 'none'
+			}, 500)
+		})
+	
+		overlay.addEventListener('click', (e)=> {
+			e.preventDefault()
+			modal.style.opacity = '0'
+			setTimeout(()=> {
+				modal.style.display = 'none'
+			}, 500)
+		})
+	}
+
+	if (document.querySelector('.consult__modal') !== null) {
+		showHideModal(document.querySelectorAll('.consult__btn'), document.querySelector('.consult__close.qr__close'), document.querySelector('.consult__overlay.qr__overlay'), document.querySelector('.consult__modal'))
+
+		showHideModal(document.querySelectorAll('.result__info__link'), document.querySelector('.result__close.qr__close'), document.querySelector('.result__overlay.qr__overlay'), document.querySelector('.result__modal'))
+	
+		showHideModal(document.querySelectorAll('.result__info__link'), document.querySelector('.qr__close'), document.querySelector('.qr__overlay'), document.querySelector('.result__modal'))
+	}
+
+	
+	
+
 	document.querySelectorAll('.mn__link').forEach(link => {
 		link.addEventListener('click', (e)=> {
 			if (e.target.closest('.mn__li').querySelector('.mn__submenu') != null) {
@@ -108,8 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		fade: true
 	});
 
-	
-
 	$('.bslider__items').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -123,6 +170,28 @@ document.addEventListener('DOMContentLoaded', () => {
 		fade: true,
 		swipeToSlide: false,
 		swipe: true
+	});
+
+	$('.bslider__items__different').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		prevArrow: '.benefits__slider__different .bsc__arrow.prev',
+		nextArrow: '.benefits__slider__different .bsc__arrow.next',
+		fade: true,
+		swipe: true
+	});
+
+	$('.top__slider .slider__items').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false
 	});
 
 	if (document.documentElement.clientWidth <= 992) {
@@ -283,14 +352,14 @@ document.querySelectorAll('.modal__btn').forEach(btn => {
 	})
 })
 
-document.querySelector('.qr__close').addEventListener('click', () => {
+document.querySelector('.qr__modal .qr__close').addEventListener('click', () => {
 	document.querySelector('.qr__modal').style.opacity = '0'
 	setTimeout( ()=> {
 		document.querySelector('.qr__modal').style.display = 'none'
 	}, 500)
 })
 
-document.querySelector('.qr__overlay').addEventListener('click', () => {
+document.querySelector('.qr__modal .qr__overlay').addEventListener('click', () => {
 	document.querySelector('.qr__modal').style.opacity = '0'
 	setTimeout( ()=> {
 		document.querySelector('.qr__modal').style.display = 'none'
@@ -352,6 +421,20 @@ document.querySelector('.footer__link.sub__main').addEventListener('click', (e) 
         }, 100)
     }
 })
+
+window.addEventListener('scroll', function() {
+	const scrollHeight=document.documentElement.scrollHeight;
+	const clientHeight=document.documentElement.clientHeight;
+	const scrollTop=window.pageYOffset
+	
+		if (clientHeight + scrollTop == scrollHeight) {
+			console.log('done')
+		}
+});
+
+
+
+
 
 	  
 })
