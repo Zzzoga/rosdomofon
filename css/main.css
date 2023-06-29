@@ -622,7 +622,7 @@ img.person.ts__4 {
 
 .bslider__controls {
     position: absolute;
-    bottom: -83px;
+    bottom: 70px;
 }
 
 .benefits__slider .bsi__info {
@@ -784,6 +784,15 @@ img.person.ts__4 {
 
 .plus__faq {
 	transition: all .5s ease;
+	/* width: 27px; */
+	/* height: 27px; */
+	overflow: hidden;
+	border-radius: 50%;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
 }
 
 .faq__body {
@@ -819,6 +828,18 @@ img.person.ts__4 {
 
 .faq__item:hover > .faq__header {
 	border-top: 1px solid #000;
+}
+
+.faqh__value {
+	transition: all .5s ease;
+}
+
+.faq__item:hover > .faq__header .faqh__value {
+	color: #0DA7E2;
+}
+
+.faq__item:hover > .faq__header .plus__faq {
+	background: #e2e2e2;
 }
 
 footer.footer {
@@ -999,18 +1020,21 @@ a.f__sublink:hover {
 
 .ft__left {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: flex-start;
+    width: 50%;
 }
 
 .copyrights {
-    margin-right: 84px;
+    /* margin-right: 84px; */
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
 /* or 157% */
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     color: #FFFFFF;
+    width: 100%;
 }
 
 .politics {
@@ -1028,11 +1052,14 @@ a.politics {
     font-size: 14px;
     line-height: 22px;
 /* or 157% */
-    display: flex;
-    align-items: center;
-    text-align: right;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: right; */
     text-decoration-line: underline;
     color: #FFFFFF;
+    margin: 0;
+    /* width: 133%; */
+    /* flex: 1; */
 }
 
 a.politics__link {
@@ -1232,6 +1259,7 @@ section.top__slider {
 
 header.header.black {
     background: #1e1e1e;
+    z-index: 9999;
 }
 
 header.header.black .top__link {
@@ -1481,12 +1509,23 @@ section.help .section__title {
     /* overflow: hidden; */
 }
 
+.benefits__slider__different .bsi__img {
+    max-width: 745px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .benefits.different .benefits__sitem.bslider__item {
     margin-bottom: 0;
 }
 
 .benefits.different .benefits__sitem.bslider__item {
     margin-bottom: 0;
+}
+
+.benefits.different .bslider__controls {
+    bottom: -83px;
 }
 
 section.scheme {
@@ -1773,6 +1812,15 @@ section.results .section__title {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.footer.different .ft__left {
+    width: auto;
+}
+
+.footer.different .copyrights {
+    width: auto;
+    margin-right: 69px;
 }
 
 .consult__modal {
