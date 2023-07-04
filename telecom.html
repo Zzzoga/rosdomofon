@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>РосДомофон | Телекоммуникационным компаниям</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+	
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<div class="full__overlay"></div>
+
+	<div class="consult__modal">
+		<div class="consult__overlay qr__overlay"></div>
+		<div class="consult__modal__wrapper">
+			<div class="consult__close qr__close"></div>
+			<h3 class="consult__title">Закажите консультацию и получите расчет окупаемости комплекса умных сервисов РосДомофон на ваших объетах</h3>
+			<form enctype="multipart/form-data" method="post" id="modal__form" onsubmit="send(event, '/mail.php')" class="call__form">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input" required="">
+				<input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input" required="">
+				<input type="mail" name="mail" id="mail" placeholder="Email" class="form__input" required="">
+				<div class="politics modal">
+					<input type="checkbox" class="custom-checkbox" id="politic" name="politic" value="yes">
+					<label for="politic">Я согласен с <a href="#" class="politic__link">политикой конфиденциальности</a></label>
+				</div>
+				<input type="submit" value="Отправить" class="form__submit small__download__btn">
+			</form>
+		</div>
+	</div>
+
+    <div class="consult__modal__self">
+		<div class="consult__self__overlay qr__overlay"></div>
+		<div class="consult__modal__wrapper">
+			<div class="consult__self__close qr__close"></div>
+			<h3 class="consult__title">Оставьте заявку на консультацию и получите подробную информацию об окупаемости сервиса</h3>
+			<form enctype="multipart/form-data" method="post" id="modal__form__self" onsubmit="send(event, '/mail.php')" class="call__form">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" class="form__input" required="">
+				<input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="form__input" required="">
+				<input type="mail" name="mail" id="mail" placeholder="Email" class="form__input" required="">
+				<div class="politics modal">
+					<input type="checkbox" class="custom-checkbox" id="politic" name="politic" value="yes">
+					<label for="politic">Я согласен с <a href="#" class="politic__link">политикой конфиденциальности</a></label>
+				</div>
+				<input type="submit" value="Отправить" class="form__submit small__download__btn">
+			</form>
+		</div>
+	</div>
+
+	<div class="result__modal consult__modal">
+		<div class="result__overlay qr__overlay"></div>
+		<div class="result__modal__wrapper">
+			<div class="result__close qr__close"></div>
+				<div class="result__img">
+					<img src="img/telecom__result__modal.jpg" alt="">
+				</div>	
+				<h3 class="result__title">Тюменский телеком-оператор успешно борется с федеральными гигантами с помощью РосДомофон</h3>
+				<div class="result__text">
+					<p>Компания из Тюмени успешно справляется с конкуренцией федеральных телеком-гигантов, используя новую услугу РосДомофон. Она позволяет продвигать широкополосный доступ в Интернет с помощью умных домофонов в новых ЖК.</p>
+					<p>РосДомофон предоставляет <b>безопасное и простое техническое решение</b> — IP-домофоны, связанные с умной домофонией через программное обеспечение, а аналоговые — через РосДомофон адаптер. Это позволило подключать услуги без замены уже установленных панелей. Кроме того, безопасность персональных данных абонентов была также учтена, поскольку РосДомофон не имеет доступа к информации жильцов и не зависит от других телеком-операторов.</p>
+					<p>На момент внедрения умной домофонии, <b>только 7% жильцов</b> имели подключенный интернет. Оператор предложил новоселам пакет услуг «Умный домофон + Интернет», который был запущен в домах на <b>128 и 256 квартир</b>. Половина заселившихся жильцов сразу подключили новый пакет услуг, а оставшиеся — только умный домофон. Многие из них впоследствии подключили интернет после использования умного домофона, убедившись в надежности и качестве предоставляемых услуг.</p>
+					<p>После добавления умной домофонии от РосДомофон в список услуг компании, количество абонентов на услугах широкополосного доступа в Интернет и интерактивного телевидения <b>возросло на 15%.</b></p>
+                    <p><b>Итоги телеком-оператора:</b></p>
+					<p><ul>
+                        <li>37% (143 квартиры) подключили пакет услуг «Интернет + ТВ + умный домофон в подарок»;</li>
+                        <li>22% (87 квартир) подключили платную услугу «Умный домофон»</li>
+                    </ul></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="qr__modal">
+		<div class="qr__overlay"></div>
+		<div class="qr__wrapper">
+			<div class="qr__close"></div>
+			<div class="qr__code">
+				<img src="img/qr.svg" alt="">
+			</div>
+			<div class="qr__info">
+				<div class="qr__title">Отсканируйте QR-код камерой вашего смартфона и перейдите к загрузке мобильного приложения РосДомофон</div>
+				<div class="qr__bottom">
+					<div class="qr__text">Сервис доступен на платформах</div>
+					<div class="qr__markets">
+						<a href="/"><img src="img/modal__app__1.svg" alt=""></a>
+						<a href="/"><img src="img/modal__app__2.svg" alt=""></a>
+						<a href="/"><img src="img/modal__app__3.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile__nav black">
+		<div class="mobile__nav__wrapper">
+			<ul class="mn__ul">
+				<li class="mn__li"><a href="/" class="mn__link">Для жителей</a></li>
+				<li class="mn__li">
+					<a href="/" class="mn__link">Для бизнеса  <div class="nav__arrow"></div></a>
+					<div class="mn__submenu">
+						<ul class="mn__sub__menu">
+							<li><a href="/home.html" class="mn__sub__link">Домофонным компаниям</a></li>
+							<li><a href="/telecom.html" class="mn__sub__link">Телекоммуникационным компаниям</a></li>
+							<li><a href="/control.html" class="mn__sub__link">Управляющим компаниям</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mn__li"><a href="/" class="mn__link">О компании</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<header class="header black">
+		<div class="header__wrapper">
+			<a href="/" class="logo"></a>
+			<nav class="top__nav">
+				<ul class="top__ul">
+					<li class="top__li"><a href="/" class="top__link">Для жителей</a></li>
+					<li class="top__li">
+						<a href="/" class="top__link">Для бизнеса  <div class="nav__arrow"></div></a>
+						<div class="submenu">
+							<ul class="sub__menu">
+								<li><a href="/home.html" class="sub__link">Домофонным компаниям</a></li>
+								<li><a href="/telecom.html" class="sub__link">Телекоммуникационным компаниям</a></li>
+								<li><a href="/control.html" class="sub__link">Управляющим компаниям</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="top__li"><a href="/" class="top__link">О компании</a></li>
+				</ul>
+			</nav>
+			<a href="/" class="small__download__btn modal__btn">Личный кабинет</a>
+			<div class="burger__control">
+				<div class="burger__line"></div>
+				<div class="burger__line"></div>
+				<div class="burger__line"></div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="top__slider">
+			<div class="top__slider__wrapper">
+				<div class="slider__items">
+					<div class="slider__item">
+						<div class="ts__info">
+							<div class="slide__title">РосДомофон: Сделайте ваши домофоны умными без замены действующего оборудования</div>
+							<div class="slide__text">Сервис совместим с более 120 моделями домофонов</div>
+						</div>
+						<div class="slide__video first">
+							<iframe src="video/1.mp4" frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="ts__info">
+							<div class="slide__title">РосДомофон: Увеличивайте доход за счёт объединения сервисов безопасности на одной платформе</div>
+							<div class="slide__text">Все в одном: домофон, умная домофония, видеонаблюдение и СКУД</div>
+						</div>
+						<div class="slide__video second">
+							<iframe src="video/2.mp4" frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="ts__info">
+							<div class="slide__title">РосДомофон: Увеличивайте собираемость платежей за счёт автоматизации оплат и блокировки трубок</div>
+							<div class="slide__text">Готовая система приёма платежей с оплатой за весь комплекс сервисов</div>
+						</div>
+						<div class="slide__video third">
+							<iframe src="video/3.mp4" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="slider__btn small__download__btn consult__btn">
+					<span class="tsd__title">Заказать консультацию</span>
+					<span class="tsd__text"> о возможностях сервисов РосДомофон</span>
+				</div>
+				<!-- <div class="sliders__video">
+					<div class="sliders__video__wrapper">
+						<div class="slide__video first">
+							<iframe src="video/1.mp4" frameborder="0"></iframe>
+						</div>
+						<div class="slide__video second">
+							<iframe src="video/2.mp4" frameborder="0"></iframe>
+						</div>
+						<div class="slide__video third">
+							<iframe src="video/3.mp4" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</section>
+
+		<section class="help">
+			<div class="help__wrapper">
+				<h2 class="section__title">Как поможет РосДомофон?</h2>
+				<div class="help__items">
+					<div class="help__item">
+						<div class="h_item__icon">+10%</div>
+						<div class="h__item__title">Увеличение доходов с каждого абонента</div>
+						<div class="h__item__text">
+							Комплекс умных сервисов от РосДомофон поможет расширить пакет услуг вашей компании и увеличить ARPU на 10% и более за счет внедрения умной домофонии, видеонаблюдения в доме и СКУД во дворе. 
+						</div>
+					</div>
+
+					<div class="help__item">
+						<div class="h_item__icon">X2</div>
+						<div class="h__item__title">Увеличивайте LTV без замены оборудования</div>
+						<div class="h__item__text">
+							Включение умной домофонии в пакет услуг вашей компании поможет повысить LTV в 2 и более раз т.к. домомофон обслуживает только одна компания. Тот, кто обслуживает домофон, имеет доступ к  контактам собственников.
+						</div>
+					</div>
+
+					<div class="help__item">
+						<div class="h_item__icon">+100 <span class="small__text">тыс. руб.</span></div>
+						<div class="h__item__title">Сокращайте расходы на 100 000 рублей и более</div>
+						<div class="h__item__text">
+							Сокращение расходов на настройку биллинга за счёт использования встроенной системы приёма платежей. Интеграция личного кабинета абонента с мобильным приложение поможет сократить расходы на информирование. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefits different telecom">
+			<div class="benefits__wrapper">
+				<h2 class="section__title">Решайте задачи бизнеса с РосДомофон</h2>
+				<div class="benefits__static">
+					<div class="benefits__sitem">
+						<div class="bsi__info">
+							<div class="bsi__title">Все сервисы на одной платформе </div>
+							<div class="bsi__text">Платформа РосДомофон позволяет объединить умную домофонию, видеонаблюдение и СКУД, а также кнопку с вызовом ЕДДС. Подключайте жилые комплексы с калитками, входами в подъезд, шлагбаумом и воротами в паркинг.</div>
+						</div>
+						<div class="bsi__img">
+							<img src="img/telecom_1.png" alt="">
+						</div>
+					</div>
+
+					<div class="benefits__sitem">
+						<div class="bsi__info">
+							<div class="bsi__title">Интеграция с ЛК абонента и вашей СRM</div>
+							<div class="bsi__text">Приложение РосДомофон можно интегрировать с личным кабинетом абонента. Внутри мобильного приложения жильцы могут отправлять заявки, откуда они попадают напрямую в CRM вашей техподдержки.</div>
+						</div>
+						<div class="bsi__img">
+							<img src="img/telecom_2.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="benefits__slider__different telecom">
+					<div class="benefits__slider__wrapper">
+						<div class="bslider__items">
+							<div class="benefits__sitem bslider__item first__slide">
+								<div class="bsi__info">
+									<div class="bsi__title">Работает с установленными домофонами</div>
+									<div class="bsi__text">Система РосДомофон подходит для уже установленных домофонов. IP-домофоны можно подключить напрямую, а аналоговые и цифровые через RDA (РосДомофон адаптер). </div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/cart__3.png" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Удобное управление домофонами</div>
+									<div class="bsi__text">Онлайн платформа РосДомофон позволяет собрать все ваши домофоны в одном месте, быстро запустить сервис умной домофонии, а также удаленно управлять трубками в квартире и функционалом мобильного приложения.</div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/telecom_4.png" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Новые возможности коммуникации</div>
+									<div class="bsi__text">Рассказывайте о новых услугах и важных событиях вашей компании. Ваши абоненты не пропустят информационный баннер и Push-уведомления в мобильном приложении. </div>
+								</div>
+								<div class="bsi__img cart__5">
+									<img src="img/telecom_5.png" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Брендирование мобильного приложения</div>
+									<div class="bsi__text">Есть 2 варианта брендирования мобильного приложения РосДомофон:
+                                        <ul>
+                                            <li>Логотип вашей компании внутри приложения</li>
+                                            <li>White Label — приложение с функционалом РосДомофон, но в фирменном стиле вашей компании</li>
+                                        </ul>
+                                    </div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/telecom_6.png" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Готовые инструменты для приема оплат </div>
+									<div class="bsi__text">Принимайте оплату за интернет и домофонию. Интегрируйте вашу биллинговую систему в мобильное приложение или используйте уже встроенную систему приема оплат от РосДомофон. </div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/telecom_7.png" alt="">
+								</div>
+							</div>
+							<div class="benefits__sitem bslider__item">
+								<div class="bsi__info">
+									<div class="bsi__title">Удобный кабинет для УК</div>
+									<div class="bsi__text">Управляющие компании будут чаще сотрудничать с вами, если вы предоставите им доступ к видеонаблюдению и общению с жильцами. УК смогут информировать жильцов через приложение и выгружать архив записей с камер.</div>
+								</div>
+								<div class="bsi__img">
+									<img src="img/telecom_8.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="bslider__controls">
+							<div class="bs__controls__circle">
+								<div class="circle__border"></div>
+								<div class="circle__white">3/8</div>
+							</div>
+							<div class="bs__controls__arrows">
+								<div class="bsc__arrow prev"></div>
+								<div class="bsc__arrow next">
+									<span class="span__more">Еще решения</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="scheme">
+			<div class="scheme__wrapper">
+				<h2 class="section__title">Схема работы</h2>
+				<div class="scheme__items">
+					<div class="scheme__item">
+						<img src="img/s_1.svg" alt="">
+						<div class="scheme__item__text">Регистрируетесь <br>в РосДомофон <br>и подключаете ваше <br>оборудование</div>
+					</div>
+					<div class="scheme__item">
+						<img src="img/s_2.svg" alt="">
+						<div class="scheme__item__text">Получаете <br>маркетинговые материалы <br>и информируете жильцов <br>о новых сервисах </div>
+					</div>
+					<div class="scheme__item">
+						<img src="img/s_3.svg" alt="">
+						<div class="scheme__item__text">Одобряете заявки <br>на подключение от жильцов <br>и активируете им новые <br>сервисы</div>
+					</div>
+					<div class="scheme__item">
+						<img src="img/s_4.svg" alt="">
+						<div class="scheme__item__text">Настраиваете <br>ежемесячную дату <br>создания счета <br>и суммы на оплату</div>
+					</div>
+				</div>
+				<div class="scheme__lines">
+					<img src="img/line_arrow.svg" alt="">
+				</div>
+				<div class="scheme__lines__text">
+					Получаете оплату от жителей на свой расчетный счет
+				</div>
+				<div class="scheme__text">Узнайте подробнее об окупаемости умной домофонии и комплекса умных сервисов РосДомофон на ваших объектах </div>
+				<div class="scheme__btn small__download__btn lead__btn">Заказать консультацию</div>
+			</div>
+		</section>
+
+		<section class="results">
+			<div class="results__wrapper">
+				<h2 class="section__title">Результаты работы с нами</h2>
+				<div class="results__item">
+					<img src="img/telecom__result.jpg" alt="">
+					<div class="result__info">
+						<div class="result__info__title">Тюменский телеком-оператор </div>
+						<div class="result__info__text">Компания успешно справляется с конкуренцией федеральных телеком-гигантов, используя новую услугу РосДомофон. Она позволяет продвигать широкополосный доступ в Интернет с помощью умных домофонов в новых ЖК.</div>
+						<div class="result__info__link">Показать решение</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq different">
+			<div class="faq__wrapper">
+				<h2 class="section__title">Если остались вопросы</h2>
+				<div class="faq__list">
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">Как окупить запуск такой услуги на пятиэтажках</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">Есть два варианта действий: увеличить доходную часть услуги или сократить расходную. Чтобы увеличить доходы, мы предлагаем маркетинговый набор для привлечения новых клиентов внутри дома. Также мы рекомендуем подключать несколько услуг. Например, видеонаблюдение детской площадки или парковки в дополнение к умному домофону. Для сокращения расходной части мы разработали специальные коммерческие условия для партнеров с проектами массовых внедрений услуги на пятиэтажках. Более подробную информацию Вам предоставят сотрудники отдела продаж.
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">Каким образом подключается координатно-матричная панель к вашему программному обеспечению?</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">
+							<p>Для подключения координатно-матричных (аналоговых) или цифровых домофонов мы разработали специальный адаптер RDA (РосДомофонАдаптер) позволяющий перехватить аналоговый сигнал от вызывной панели, преобразовать его в цифровой и отправить в Интернет. Существуют различные модели RDA, позволяющие подключить к сервису как отдельно стоящий, так и многоподъездный дом.</p>
+							<p>RDA ставится в разрыв между вызывной панелью и коммутатором, что позволяет отправлять вызов на и домофонную трубку, и в приложение на смартфоне пользователя. Также пользователь может открывать со смартфона все подключенные к RDA двери (шлагбаумы, ворота, калитки и т.д.).</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">У меня уже есть трубка от домофона. Как подключить ваш сервис?</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">
+							<p>Существует 3 типа подключений IP-панели к сервису РосДомофон:</p>
+							<p>1. Прямое подключение от IP-панели к нашему SIP-серверу, посредством публичного ip-адреса на панели. Далее производится настройка подключения в личном кабинете РосДомофона и затем полученные данные прописываются в настройках SIP на ip-панели.</p>
+							<p>2. Подключение посредством ATC на RDA. В этом случае не требуется наличие публичного ip-адреса. В роли промежуточного узла выступает RDA, который позволяет ретранслировать как SIP-звонки, так приватные видео-потоки. IP-панель и RDA должны находиться в общей локальной сети.</p> 
+							<p>3. SIP-транк подключение посредством выделенного сервера. Это решение по своей логике аналогично предыдущему пункту с RDA, только вместо RDA разворачивается полноценный сервер с АТС на стороне партнера.</p>
+
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">Можно ли настроить прием видео в приложение из камеры, встроенной в домофон?</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">
+							<p>Да, можно. Наша система умеет транслировать видеопотоки как с IP-камер с помощью RTSP протокола, так и с аналоговых камер, работающих через видеорегистратор с возможностью ретрансляции через RTSP протокол. Настройка и привязка видеопотока к конкретному адресу осуществляется в личном кабинете партнера.</p>
+							<p>В случае, если в одной локальной сети с камерой имеется RDA, то возможна ретрансляция в облако РосДомофона до 6ти видео-потоков по локальному (серому) ip-адресу.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">Что можно использовать, если вызывная панель домофона не оборудована камерой?</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">
+							<p>Необходимо разместить внешнюю камеру рядом с домофонной панелью так, чтобы она была направлена на лицо посетителя и избавлена от засветов, так чтобы пользователь всегда мог рассмотреть лицо посетителя в хорошем качестве</p>
+							<p>К РосДомофон можно подключить как ip-камеры посредствам RTSP протокола, так и аналоговые камеры, работающие через видеорегистратор с возможностью передачи видео через RTSP протокол. Настройка и привязка видеопотока к конкретному подъезду и домофону осуществляется в личном кабинете на платформе РосДомофон.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">Кто пользуется вашим приложением? (возраст, интересы)</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">
+							<p>Наша внутренняя статистика показывает, что сервис РосДомофон востребован как среди молодых и технический продвинутых пользователей, так и у граждан других категорий. Основная аудитория  — это пользователи от 35 до  54 лет, в большинстве — женщины.</p>
+							<p>Людям интересен сервис умной домофонии и видеонаблюдения, это подтверждает частота входов в мобильное приложение — 1,77 раза ежедневно 1  пользователь заходит в приложения РосДомофон для просмотра камер, приёма видеовызова с домофона или открытия дверей, калиток или шлагбаумов.</p>
+							<div class="faq__images">
+								<img src="img/faq_1.jpeg" alt="">
+								<img src="img/faq_2.jpeg" alt="">
+								<img src="img/faq_3.jpeg" alt="">
+								<img src="img/faq_4.jpeg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__header">
+							<div class="faqh__value">Как жильцы будут платить за сервис?</div>
+							<div class="plus__faq"><img src="img/plus.svg" alt=""></div>
+						</div>
+						<div class="faq__body">
+							<p>Есть 3 варианта приёма платежей:</p>
+							<p>– Классический, тот что был у вас ранее: печатные квитанции от управляющей компании, в которые добавляется плата за работу системы. Также можно использовать свой биллинг, если таковой имеется.</p>
+							<p>– Сделать интеграцию сервиса РосДомофон с Вашей биллинговой системой</p>
+							<p>– Подключить встроенную систему приёма платежей на платформе РосДомофон и собирать с жильцов оплату через официальное мобильное приложение. Опыт наших партнеров показал, что такой вариант сбора платежей поднимает собираемость до 90-95% от общего кол-ва пользователей нового сервиса.</p>
+						</div>
+					</div>
+				</div>
+				<a href="/" class="more">Показать больше ответов</a>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer different">
+		<div class="footer__wrapper">
+			<div class="footer__top">
+				<div class="footer__items">
+					<div class="footer__item">
+						<a href="/" class="footer__logo"></a>
+						<div class="footer__info">
+							<div class="footer__text">ООО «ДОМ-ИТ»</div>
+							<div class="footer__text">ИНН 9709014190</div>
+						</div>
+						<a href="#" class="footer__info__link">
+							<div class="fil__img">
+								<img src="img/phone__ico.svg" alt="">
+							</div>
+							<span class="phone">Позвонить нам</span>
+						</a>
+						<a href="#" class="footer__info__link">
+							<div class="fil__img">
+								<img src="img/mail__ico.svg" alt="">
+							</div>
+							<span class="mail">Написать нам</span>
+						</a>
+					</div>
+
+					<div class="footer__item">
+						<ul>
+							<li><a href="/" class="footer__link">О нас</a></li>
+							<li><a href="/" class="footer__link">Оставить отзыв</a></li>
+							<li><a href="/" class="footer__link">Кабинет партнёра</a></li>
+							<li><a href="/" class="footer__link">Техподдержка</a></li>
+							<li><a href="/" class="footer__link">Инструкции</a></li>
+							<li><a href="/" class="footer__link">Тарифы</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<ul class="ul__submenu">
+							<li>
+								<a href="/" class="footer__link sub__main">Стать партнером</a>
+								<div class="footer__submenu">
+									<ul>
+										<li><a href="/home.html" class="f__sublink">Домофонным компаниям</a></li>
+										<li><a href="/telecom.html" class="f__sublink">Телекоммуникационным компаниям</a></li>
+										<li><a href="/control.html" class="f__sublink">Управляющим компаниям</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<div class="markets">
+							<a href="/" class="apple"><img src="img/apple.svg" alt=""></a>
+							<a href="/" class="apple"><img src="img/android.svg" alt=""></a>
+							<a href="/" class="apple"><img src="img/huawei.svg" alt=""></a>
+						</div>
+						<div class="soc">
+							<a href="" class="soc__link"><img src="img/tg__ico.svg" alt=""></a>
+							<a href="" class="soc__link"><img src="img/youtube__ico.svg" alt=""></a>
+							<a href="" class="soc__link"><img src="img/vk__ico.svg" alt=""></a>
+							<span class="soc__text">Подпишитесь на наши новости в соцсетях</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom different">
+				<div class="ft__left">
+					<div class="copyrights">© ООО «Дом-ИТ», 2023</div>
+					<a href="/" class="politics__link">Политика конфиденциальности</a>
+					<a href="/" class="politics__link">Пользовательское соглашение</a>
+				</div>
+				<div class="ft__right">
+					<a href="https://sk.ru/" class="sk"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+		SmoothScroll({
+			animationTime    : 1000,
+			stepSize         : 50,
+	
+			
+			accelerationDelta : 30,  
+			accelerationMax   : 2,   
+	
+	
+			keyboardSupport   : true,  
+			arrowScroll       : 50,
+	
+	
+			pulseAlgorithm   : true,
+			pulseScale       : 4,
+			pulseNormalize   : 1,
+	
+			touchpadSupport   : true,
+		})
+	</script>	
+	
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

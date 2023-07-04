@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		$(window).scroll(() => { // при прокрутке страницы
 		  currentScroll = $(window).scrollTop() // узнаем на сколько прокрутили страницу
 		  const headerHidden = () => header.hasClass('header_hidden') // узнаем скрыт header или нет
-		  if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
+		  if (currentScroll > prevScroll && !headerHidden() && document.querySelector('.top__link.active') == null) { // если прокручиваем страницу вниз и header не скрыт
 			header.addClass('header_hidden') // то скрываем header
 		  }
 		  if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			el.addEventListener('click', (e)=> {
 				e.preventDefault()
 				modal.style.display = 'flex'
+				document.querySelector('html').style.overflowY = 'hidden'
 				setTimeout(()=> {
 					modal.style.opacity = '1'
 				}, 500)
@@ -108,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		close.addEventListener('click', (e)=> {
 			e.preventDefault()
 			modal.style.opacity = '0'
+			document.querySelector('html').style.overflowY = 'auto'
 			setTimeout(()=> {
 				modal.style.display = 'none'
 			}, 500)
@@ -116,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		overlay.addEventListener('click', (e)=> {
 			e.preventDefault()
 			modal.style.opacity = '0'
+			document.querySelector('html').style.overflowY = 'auto'
 			setTimeout(()=> {
 				modal.style.display = 'none'
 			}, 500)
@@ -128,11 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		showHideModal(document.querySelectorAll('.result__info__link'), document.querySelector('.result__close.qr__close'), document.querySelector('.result__overlay.qr__overlay'), document.querySelector('.result__modal'))
 	
 		showHideModal(document.querySelectorAll('.result__info__link'), document.querySelector('.qr__close'), document.querySelector('.qr__overlay'), document.querySelector('.result__modal'))
+
+		showHideModal(document.querySelectorAll('.lead__btn'), document.querySelector('.consult__self__close.qr__close'), document.querySelector('.consult__self__overlay.qr__overlay'), document.querySelector('.consult__modal__self'))
 	}
 
 	
-	
-
 	document.querySelectorAll('.mn__link').forEach(link => {
 		link.addEventListener('click', (e)=> {
 			if (e.target.closest('.mn__li').querySelector('.mn__submenu') != null) {
@@ -340,6 +343,21 @@ document.querySelectorAll('.faq__header').forEach(faq => {
         }
         
     })
+})
+
+document.querySelector('.faq .more').addEventListener('click', e => {
+    e.preventDefault()
+    if (e.target.textContent === 'Показать больше ответов') {
+        document.querySelector('.faq__item:nth-child(5)').style.display = 'flex'
+        document.querySelector('.faq__item:nth-child(6)').style.display = 'flex'
+        document.querySelector('.faq__item:nth-child(7)').style.display = 'flex'
+        e.target.innerHTML = 'Скрыть ответы'
+    } else if (e.target.textContent === 'Скрыть ответы') {
+        document.querySelector('.faq__item:nth-child(5)').style.display = 'none'
+        document.querySelector('.faq__item:nth-child(6)').style.display = 'none'
+        document.querySelector('.faq__item:nth-child(7)').style.display = 'none'
+        e.target.innerHTML = 'Показать больше ответов'
+    }
 })
 
 document.querySelectorAll('.modal__btn').forEach(btn => {

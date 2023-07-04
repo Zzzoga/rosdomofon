@@ -103,7 +103,7 @@ header.header {
     display: flex;
     justify-content: center;
     padding: 18px 120px;
-    z-index: 99;
+    z-index: 999;
     background: #fff;
     transition: all .5s linear;
 }
@@ -467,6 +467,7 @@ img.person.ts__4 {
     max-width: 1044px;
     width: 100%;
     align-items: center;
+    position: relative;
 }
 
 .benefits__static {
@@ -506,7 +507,6 @@ img.person.ts__4 {
 
 .bsi__info {
     max-width: 560px;
-    margin-bottom: 50p;
 }
 
 .benefits__slider {
@@ -738,7 +738,9 @@ img.person.ts__4 {
 	transition: all .5s ease;
 }
 
-.more:hover {
+.more:hover,
+.more:focus,
+.more:active {
 	color: #000000;
     border-bottom: 1px solid #00000047;
 }
@@ -765,6 +767,7 @@ img.person.ts__4 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    transition: all .5s ease;
 }
 
 .faq__header {
@@ -822,12 +825,14 @@ img.person.ts__4 {
     transition: all .5s ease;
 }
 
-.faq .more {
-    margin-top: 55px;
+.faq__item:nth-child(5),
+.faq__item:nth-child(6),
+.faq__item:nth-child(7) {
+    display: none;
 }
 
-.faq__item:hover > .faq__header {
-	border-top: 1px solid #000;
+.faq .more {
+    margin-top: 55px;
 }
 
 .faqh__value {
@@ -1097,7 +1102,7 @@ a.politics__link:hover {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 99999;
     opacity: 0;
     transition: all .5s ease;
 }
@@ -1334,7 +1339,7 @@ section.top__slider {
     border-radius: 65px;
     cursor: pointer;
     position: absolute;
-    top: 240px;
+    top: 288px;
     /* margin-top: 28px; */
 }
 
@@ -1365,7 +1370,7 @@ section.top__slider {
 
 section.benefits.different {
     background: url(../img/app__bg.png) no-repeat center bottom;
-    padding-bottom: 460px;
+    padding-bottom: 540px;
     z-index: 9;
     position: relative;
 }
@@ -1464,10 +1469,12 @@ section.help .section__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 42px;
+    /* width: 100%; */
 }
 
 .benefits.different .bsi__info {
-    max-width: 471px;
+    position: relative;
+    max-width: 470px;
     width: 100%;
 }
 
@@ -1475,31 +1482,41 @@ section.help .section__title {
     font-weight: 400;
     font-size: 18px;
     line-height: 31px;
+    display: flex;
+    flex-direction: column;
 }
 
 .benefits.different .section__title {
-    margin-bottom: 191.5px;
+    margin-bottom: 190px;
 }
 
 .benefits.different .benefits__sitem {
-    margin-bottom: 320px;
+    margin-bottom: 95px;
     position: relative;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
+}
+
+.benefits.different .benefits__static .benefits__sitem {
+    align-items: center;
 }
 
 .benefits.different .bsi__img {
     position: absolute;
-    right: -110px;
+    right: -100px;
 }
 
-.benefits.different .benefits__static .benefits__sitem:nth-child(1) .bsi__img {
-    right: -15px;
+.benefits__sitem.second .bsi__img {
+    right: -165px;
 }
 
-.benefits.different .benefits__static .benefits__sitem:nth-child(2) .bsi__img {
-    right: -170px;
+.benefits.different .benefits__static .benefits__sitem:nth-child(1) {
+    margin-bottom: 300px;
+}
+
+.benefits.different .benefits__static .benefits__sitem:nth-child(2) {
+    margin-bottom: 216px;
 }
 
 .benefits__slider__different {
@@ -1510,7 +1527,7 @@ section.help .section__title {
 }
 
 .benefits__slider__different .bsi__img {
-    max-width: 745px;
+    max-width: 765px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1525,7 +1542,7 @@ section.help .section__title {
 }
 
 .benefits.different .bslider__controls {
-    bottom: -83px;
+    top: 380px;
 }
 
 section.scheme {
@@ -1729,7 +1746,7 @@ section.results .section__title {
 .top__slider .slick-dots {
     justify-content: center;
     position: absolute;
-    top: 350px;
+    top: 400px;
     padding: 0;
     margin: 0;
     align-items: center;
@@ -1823,9 +1840,11 @@ section.results .section__title {
     margin-right: 69px;
 }
 
-.consult__modal {
+.consult__modal,
+.consult__modal__self,
+.lead__modal {
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     display: none;
     justify-content: center;
     align-items: center;
@@ -2004,7 +2023,7 @@ form#modal__form {
 
 .result__modal {
     position: fixed;
-    z-index: 9999;
+    z-index: 999999;
     display: none;
     justify-content: center;
     align-items: center;
@@ -2042,7 +2061,8 @@ h3.result__title {
 }
 
 .result__text {
-    max-height: 410px;
+    max-height: 390px;
+    overflow-y: scroll;
 }
 
 .faq__images {
@@ -2060,7 +2080,7 @@ h3.result__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 210px;
+    min-height: 260px;
 }
 
 header.header.black .submenu {
@@ -2069,4 +2089,86 @@ header.header.black .submenu {
 
 header.header.black a.sub__link {
     color: #fff;
+}
+
+/* TELECOM COMPANY */
+
+.benefits__slider__different .slick-dots {
+    display: none !important;
+}
+
+section.benefits.different {
+    margin-top: 127px;
+}
+
+.benefits.different .bsi__text ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.small__text {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.result__modal ul {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.result__text {
+    padding-right: 10px;
+}
+
+/* полоса прокрутки (скроллбар) */
+.result__text::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 3px; /* высота для горизонтального скролла */
+    background-color: #d5d5d5;
+}
+
+/* ползунок скроллбара */
+.result__text::-webkit-scrollbar-thumb {
+    background-color: #0da7e2;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* CONTROL */
+
+.help__item.control {
+    padding-top: 20px;
+}
+
+.benefits.control .benefits__static .benefits__sitem:nth-child(1) {
+    margin-bottom: 305px;
+}
+
+.benefits.control .benefits__static .benefits__sitem:nth-child(2) {
+    margin-bottom: 296px;
+}
+
+.benefits.control .benefits__sitem {
+    align-items: center;
+}
+
+.benefits.control .bslider__controls {
+    top: 352px;
+}
+
+section.benefits.different.control {
+    padding-bottom: 420px;
+}
+
+.scheme.control {
+    padding-bottom: 112px;
+}
+
+.benefits.different.telecom .bslider__controls {
+    top: 330px;
+}
+
+.plus__faq img {
+	width: 100%;
 }
